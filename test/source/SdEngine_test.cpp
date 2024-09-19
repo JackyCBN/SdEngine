@@ -1,8 +1,9 @@
+#include <catch2/catch_test_macros.hpp>
+
 #include "lib.hpp"
 
-auto main() -> int
+TEST_CASE("Name is SdEngine", "[library]")
 {
   auto const lib = library {};
-
-  return lib.name == "SdEngine" ? 0 : 1;
+  REQUIRE(lib.name == "SdEngine");
 }

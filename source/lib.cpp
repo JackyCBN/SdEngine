@@ -1,6 +1,8 @@
 #include "lib.hpp"
 
+#include <fmt/core.h>
+
 library::library()
-    : name {"SdEngine"}
+    : name {fmt::format("{}", "SdEngine")}
 {
 }

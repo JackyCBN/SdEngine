@@ -28,6 +28,9 @@ target_include_directories(
 
 target_compile_features(SdEngine_lib PUBLIC cxx_std_17)
 
+find_package(fmt REQUIRED)
+target_link_libraries(SdEngine_lib PRIVATE fmt::fmt)
+
 # ---- Declare executable ----
 
 add_executable(SdEngine_exe source/main.cpp)
