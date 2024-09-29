@@ -1,5 +1,5 @@
 {
-  "name": "sdEngine",
+  "name": "sd-engine",
   "version-semver": "0.1.0",
   "dependencies": [
     {
